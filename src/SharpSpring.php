@@ -33,11 +33,7 @@ class SharpSpring
 
 		$queryString = http_build_query(array('accountID' => $this->accountID, 'secretKey' => $this->secretKey)); 
 		$url = "http://api.sharpspring.com/pubapi/v1/?$queryString"; 
-
-		if (!session_id())
-		    session_start();
-    
-		$requestID = session_id();
+		$requestID = uniqid();
 		
 		$data = array(                                                                                
 		   'method' => $method,                                                                      

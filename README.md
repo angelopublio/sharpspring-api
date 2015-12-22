@@ -1,4 +1,4 @@
-# sharpspring-api
+# SharpSpring API
 Super-simple SharpSpring API v1 wrapper, in PHP.
 
 Let's improve your website with Marketing Automation and Inbound Marketing.
